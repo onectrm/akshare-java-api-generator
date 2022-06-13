@@ -114,7 +114,7 @@ public class AkshareJavaApiGeneratorApplication implements CommandLineRunner {
     private AKShareAPIClass generateAPIClass(String packageName, String className, List<AKShareRawAPIParameter> rawAPIParameters) {
         AKShareAPIClass cls = new AKShareAPIClass();
 
-        HashMap<AKShareAPIProperty, Integer> count = new HashMap<>();
+        HashMap<AKShareAPIProperty, Integer> count = new LinkedHashMap<>();
 
         if (rawAPIParameters != null) {
             int i = 0;

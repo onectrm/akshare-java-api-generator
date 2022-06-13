@@ -1,13 +1,11 @@
 package com.onectrm.akshare.api.generator;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class AKShareAPIClass {
     private final List<String> importedPackages = new ArrayList<>();
-    private final Set<AKShareAPIProperty> properties = new HashSet<>();
+    private final List<AKShareAPIProperty> properties = new ArrayList<>();
     private AKShareRawAPI rawAPI;
     private String className;
     private String packageName;
@@ -32,7 +30,7 @@ public class AKShareAPIClass {
         return importedPackages;
     }
 
-    public Set<AKShareAPIProperty> getProperties() {
+    public List<AKShareAPIProperty> getProperties() {
         return properties;
     }
 
